@@ -13,6 +13,7 @@ Before executing the application, make sure that you have the following prereque
 - NodeJs
 - Yarn
 - Docker or Redis
+- Email provider
 
 ### 1 - Configure environment variables
 
