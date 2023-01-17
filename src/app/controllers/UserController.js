@@ -10,10 +10,8 @@ export default {
       password,
     };
 
-    // Adicionar job registrationMail na fila
-    await Queue.add({ user });
-
-    //Enviar um e-mail
+    await Queue.add("RegistrationMail", { user });
+    await Queue.add("UserReport", { user });
 
     return res.json(user);
   },
